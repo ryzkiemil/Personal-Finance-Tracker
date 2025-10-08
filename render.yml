@@ -1,0 +1,8 @@
+# render.yaml
+services:
+  - type: web
+    name: finance-tracker-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python finance_bot.py
